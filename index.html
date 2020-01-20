@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html>
-<title></title>
+<head> 
+<title> Organiser </title>
 <meta charset="UTF-8">
 <meta http-equiv=”refresh” content="10">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-highway.css">
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="https://kit.fontawesome.com/b5035ca9ea.js"></script>
+<script src="script.js"></script>
 <style>
 html,body,h1,h2,h3,h4,h5,h6 {font-family: Verdana, Geneva, Tahoma, sans-serif}
 </style>
+</head>
+
 <!--guide:https://codepen.io/JohnPaulFich/pen/MXmzzM -->
 
 <body class="w3-white">
@@ -30,12 +35,15 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: Verdana, Geneva, Tahoma, sans-serif}
     <p>Click "x" to remove task</p>
     <P>Click the item to mark as comlplete </P>
     <br>
+    
     </div>
     <!-- input row-->
-    <div class="w3-card-4 w3-pale-green" style="margin-top: 16px; margin-bottom: 16; margin-left: auto; margin-right: auto; width: 65%;">
-    <input class="taskbar" type="text" placeholder="Enter Task">
+    <form class="w3-card-4 w3-pale-green" style="margin-top: 16px; margin-bottom: 16; margin-left: auto; margin-right: auto; width: 65%;">
+    <input id='iccon' class="w3-input w3-animate-input w3-2018-almost-mauve w3-round-xxlarge" type="text" placeholder="Enter Task <span class='fas fa-phone fa-fw w3-text-green' style='position: relative;'></span>" style="width:50%"> <span class="fas fa-phone fa-fw w3-text-green" style="position: relative;"></span>
+    <p> Enter item </p>
     <button class='pen' onclick="addTsk()">O</button>
-    </div>
+    </form>
+
     <!-- Incomplete Tasks row-->
     <div class="w3-card-4 w3-pale-green" style="margin-top: 16px; margin-bottom: 16; margin-left: auto; margin-right: auto; width: 65%;">
     <p> Incomplete Tasks</p>
